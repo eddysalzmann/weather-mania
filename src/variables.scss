@@ -1,0 +1,90 @@
+$primary: #5CDB95;
+$secondary: #05386B;
+$primary-light: #8EE4AF;
+$primary-dark: #165873;
+$secondary-light: #379683;
+
+
+/*$primary: #fff;
+$secondary: #000;
+$primary-light: #eee;
+$primary-dark: #ccc;
+$secondary-light: #999;*/
+
+
+$white:#fff;
+$black:#000;
+
+html{
+  font-size: 20px;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: $primary;
+  overflow: hidden;
+  color:$secondary;
+  transition: background 300ms ease-in-out;
+  text-align: center;
+  overflow: hidden;
+  &.night{
+    color:$primary;
+    background-color: $secondary;
+  }
+}
+
+a{
+  color:$secondary;
+  text-decoration: none;
+  .night &{
+    color:$primary;
+  }
+}
+
+[data-type="icon"]{
+  path{
+    fill:$secondary;
+    .night & {
+      fill:$primary;
+    }
+  }
+
+}
+
+input{
+ color:$white;
+}
+
+svg{
+ path{
+   fill: $secondary;
+   .night &{
+     fill: $primary;
+   }
+   .vld-icon &{
+     fill:none;
+     .night &{
+       fill: none;
+     }
+   }
+ }
+}
+
+button{
+  background-color:$secondary;
+  color:$primary;
+  .night & {
+    background-color:$primary;
+    color:$secondary;
+  }
+  width:90%;
+  padding: 1rem;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  &:focus{
+    outline:none;
+  }
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
