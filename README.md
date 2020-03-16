@@ -1,9 +1,6 @@
-# weather
+# Vue weather app prototye (PWA)
 
-## Project setup
-```
-npm install
-```
+Simple weather prototype that makes use of the OpenWeatherMap data from https://openweathermap.org/
 
 ### Compiles and hot-reloads for development
 ```
